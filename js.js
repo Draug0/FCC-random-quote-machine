@@ -18,14 +18,18 @@ function randomQuote() {
  $(document).ready(() => {
     fetchQuotes().then(() => {
         let random = randomQuote()
-        $('#text').text(random.quote)
+        $('#text').text(random.quote).fadeIn()
         $('#author').text(random.author)
     })
 
     $('#new-quote').click(() => {
         fetchQuotes().then(() => {
             let random = randomQuote()
-            $('#text').text(random.quote)
+            $('#text').fadeOut(400, (() => {
+                $('#text').text(random.quote)
+            }))
+            
+            $('#text').fadeIn()
             $('#author').text(random.author)
         })
     })
