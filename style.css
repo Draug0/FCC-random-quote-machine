@@ -1,12 +1,34 @@
-.wrapper {
-    padding: 25vw;
+body {
+    background-color: black;
+    color: white;
 }
 
-.row {
-    margin: 10vw 0;
+.wrapper {
+    padding: 25vh 25vw;
+}
+
+.position-absolute {
+    color: #D33F49;
+}
+
+.btn {
+    background-color: #D33F49;
+    border-color: #D33F49;
+    color:white;
 }
 
 #text {
+    padding: 3vh;
+    background-color: white;
+    border-radius: 2px;
+    color: black;
+}
+
+.row {
+    margin: 10vh 0;
+}
+
+.text {
     text-align: center;
 }
 
