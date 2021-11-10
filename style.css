@@ -1,3 +1,25 @@
+.wrapper {
+    padding: 25vw;
+}
+
+.row {
+    margin: 10vw 0;
+}
+
+#text {
+    text-align: center;
+}
+
 #author {
     text-align: right;
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        padding: 25% 10vw;
+    }
+    #author {
+        text-align: center;
+    }
 }
